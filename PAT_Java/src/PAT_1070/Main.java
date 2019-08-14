@@ -30,6 +30,15 @@ import java.util.Scanner;
  */
 
 
+/**
+ * 解题思路：
+ *      1，首先需要将每一段绳子的长度储存到数组中
+ *      2，由于每次都需要将拿到手的两段绳子对折，所有放在最先折的绳子需要折的次数很多
+ *          所有将绳子长度排序，把最短的绳子放在最前面，
+ *      3，再将每拿到的两段绳子相加之后整除2
+ */
+
+
 public class Main {
 
     public static void printN(int[] array){
@@ -46,7 +55,6 @@ public class Main {
             numbers[i] = sc.nextInt();
         }
         Arrays.sort(numbers);
-//        printN(numbers);
         int sum = 0;  // 绳子总长度
         for (int i=0;i<numbers.length;i++){
             sum = (sum + numbers[i]) / 2;
