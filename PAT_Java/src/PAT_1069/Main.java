@@ -22,13 +22,12 @@ import java.util.LinkedHashSet;
  * 输出格式：
  *      按照输入的顺序输出中奖名单，每个昵称占一行。如果没有人中奖，则输出 Keep going...。
  *
- *
- *      5 1 1
- * Imgonnawin!
- * PickMe
- * PickMe
- * PickMe
- * TryAgainAgain
+ */
+
+/**
+ * 开始有一个问题：
+ *          如果这个网友已经是中奖对象，而且他的下一个还是中奖对象，这是一个困惑
+ * 没有AC掉，有一个运行超时
  */
 
 
