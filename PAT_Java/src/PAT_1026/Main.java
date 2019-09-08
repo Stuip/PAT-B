@@ -26,6 +26,14 @@ import java.util.Scanner;
  *      12:42:59
  */
 
+
+/**
+ * 解题思路：
+ *      1,将开始时间和结束时间差值转换为秒
+ *      2,然后将时间转化为时，分，秒
+ *      3，按格式输出
+ */
+
 public class Main {
 
     public static final int CLK_TCK = 100;

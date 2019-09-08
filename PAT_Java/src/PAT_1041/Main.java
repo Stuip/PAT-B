@@ -8,7 +8,6 @@ package PAT_1041;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashMap;
 
 /**
  * 每个 PAT 考生在参加考试时都会被分配两个座位号，一个是试机座位，一个是考试座位。正常情况下，考生在入场时先得到试机座位号码，
@@ -25,11 +24,6 @@ import java.util.HashMap;
 
 public class Main {
 
-    public static void printN(String[] str){
-        for (int i=0;i<str.length;i++){
-            System.out.printf("%s   ",str[i]);
-        }
-    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -19,6 +19,7 @@ import java.util.Scanner;
  *      10015558
  */
 
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -28,6 +29,7 @@ public class Main {
         for (int i=0;i<str.length;i++){
             num[i] = Integer.parseInt(str[i]);
         }
+        // 仅仅就是将除0之外，最小值的输出一个
         for (int i=1;i<num.length;i++){
             if (num[i] >= 1){  // 判断最小值是多少
                 System.out.print(numbers[i]);
@@ -35,6 +37,7 @@ public class Main {
                 break;
             }
         }
+        // 开始从开始输出所有的字符
         for (int j=0;j<num.length;j++){
             while (num[j] > 0){
                 System.out.print(numbers[j]);

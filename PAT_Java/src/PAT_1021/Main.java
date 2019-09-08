@@ -8,7 +8,9 @@ import java.util.Scanner;
  * @Date 2019-08-01
  */
 
+
 public class Main {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] K = sc.nextLine().split("");

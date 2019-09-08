@@ -53,17 +53,15 @@ public class Main {
         LinkedHashSet<String> hashSet= new LinkedHashSet<>();  // 储存中奖的昵称
         while(S<=M){   // 如果中奖的序列大于转发总量
             if (hashSet.contains(persons[S-1])){
-                int flag=0;
+                boolean flag=true;
                 int num = S;
-                while (flag==0){
-                    if (num <= M-1){
-                        if (hashSet.contains(persons[num])){
-                            num++;
-                        }
-                        else {
-                            hashSet.add(persons[num]);
-                            flag=1;
-                        }
+                while (flag){
+                    if (hashSet.contains(persons[num])){
+                        num++;
+                    }
+                    else {
+                        hashSet.add(persons[num]);
+                        flag=false;
                     }
                 }
             }else {

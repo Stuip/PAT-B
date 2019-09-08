@@ -6,9 +6,10 @@ package PAT_1070;
  * @Date 2019-08-09
  */
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
 
 /**
  * 给定一段一段的绳子，你需要把它们串成一条绳。每次串连的时候，是把两段绳子对折，再如下图所示套接在一起。
@@ -41,22 +42,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void printN(int[] array){
-        for (int i=0;i<array.length;i++){
-            System.out.printf("%d ",array[i]);
-        }
-    }
-
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-       int N = Integer.parseInt(sc.nextLine());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
+        String[] str = br.readLine().split(" ");
         int[] numbers = new int[N];
-        for (int i=0;i<N;i++){
-            numbers[i] = sc.nextInt();
+        for (int i=0;i<str.length;i++){
+            numbers[i] = Integer.parseInt(str[i]);
         }
         Arrays.sort(numbers);
-        int sum = 0;  // 绳子总长度
-        for (int i=0;i<numbers.length;i++){
+        int sum = numbers[0];  // 绳子总长度  注意：刚刚这儿应该是最小的绳子，即第一段绳子
+        for (int i=1;i<numbers.length;i++){
             sum = (sum + numbers[i]) / 2;
         }
         System.out.printf("%d",sum);

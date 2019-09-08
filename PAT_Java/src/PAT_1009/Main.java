@@ -22,6 +22,14 @@ import java.util.Scanner;
  *      Come I Here World Hello
  */
 
+
+/**
+ * 解题思路：
+ *      1，通过获取所输入的字符串，然后用空格分隔开来
+ *      2, 通过倒叙的方式来存储每一个字符串
+ *      3, 将每一个字符串数组打印出来
+ */
+
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

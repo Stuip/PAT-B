@@ -20,6 +20,13 @@ import java.io.InputStreamReader;
  *      对每组测试用例，在一行中输出 Case #X: true 如果 A+B>C，否则输出 Case #X: false，其中 X 是测试用例的编号（从 1 开始）。
  */
 
+/**
+ * 解题思路：
+ *      接受每一行的数字，对其判断 A+B>C 是否成立
+ * 注意事项：
+ *      就是对于每一个数的存储，需要用long类型
+ */
+
 
 public class Main {
     public static void main(String[] args) throws IOException {
